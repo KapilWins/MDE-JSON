@@ -10,9 +10,9 @@
     "mdeFields": [
       {
         "id": "e4e498b0-4419-4d16-a58e-4eb64ed03851",
-        "fieldName": "State",
-        "fieldFullName": "State, Territorial, or Tribal Program",
-        "genericName": "Partner State",
+        "fieldName": "StFIPS",
+        "fieldFullName": "State, Territorial or Tribal Program of Screening",
+        "genericName": "State, Territorial or Tribal Program of Screening",
         "type": "number",
         "itemLength": 2,
         "fieldLength": 2,
@@ -25,7 +25,7 @@
       },
       {
         "id": "60721367-2338-4a4c-80a8-58e7952dcc76",
-        "fieldName": "Patient ID",
+        "fieldName": "EncodeID",
         "fieldFullName": "Unique Patient ID Number",
         "genericName": "Unique Patient ID Number",
         "type": "string",
@@ -95,7 +95,7 @@
       },
       {
         "id": "08c8f484-7c33-40b8-a3b7-8b0dd285a44e",
-        "fieldName": "ZIP Code of Residence",
+        "fieldName": "ZIP",
         "fieldFullName": "ZIP Code of Residence",
         "type": "number",
         "itemLength": 5,
@@ -109,7 +109,7 @@
       },
       {
         "id": "b9ce8e72-bbe2-47a9-825e-245fab3868ae",
-        "fieldName": "Date of Birth",
+        "fieldName": "MYB",
         "fieldFullName": "Date of Birth",
         "type": "string",
         "itemLength": 6,
@@ -160,8 +160,8 @@
       {
         "id": "08aff0de-a79e-4874-aa1e-dc08e1fab333",
         "fieldName": "Race1",
-        "fieldFullName": "Race: first race",
-        "genericName": "Race1",
+        "fieldFullName": "Race 1",
+        "genericName": "Race 1",
         "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
@@ -219,8 +219,8 @@
       {
         "id": "8524f599-a32f-4185-bd8a-6fd4fa4ee034",
         "fieldName": "Race2",
-        "genericName": "Race2",
-        "fieldFullName": "Race: second race",
+        "genericName": "Race 2",
+        "fieldFullName": "Race 2",
         "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
@@ -272,8 +272,8 @@
       {
         "id": "c16aa484-025d-4ddd-a0dd-bdb317e6171c",
         "fieldName": "Race3",
-        "genericName": "Race3",
-        "fieldFullName": "Race: third race",
+        "genericName": "Race 3",
+        "fieldFullName": "Race 3",
         "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
@@ -325,8 +325,8 @@
       {
         "id": "e5d36805-2847-43a8-b858-1bd1d8bd6a73",
         "fieldName": "Race4",
-        "genericName": "Race4",
-        "fieldFullName": "Race: fourth race",
+        "genericName": "Race 4",
+        "fieldFullName": "Race 4",
         "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
@@ -378,8 +378,8 @@
       {
         "id": "cac1663f-60ca-48d6-8352-fd87be106e6e",
         "fieldName": "Race5",
-        "genericName": "Race5",
-        "fieldFullName": "Race: fifth race",
+        "genericName": "Race 5",
+        "fieldFullName": "Race 5",
         "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
@@ -508,7 +508,47 @@
         "fieldLength": 1,
         "beginningPosition": 49,
         "leadingZeros": "yes",
-        "justification": "Right"
+        "justification": "Right",
+        "mdeFieldsOptions": [
+          {
+            "id": "a4187244-47b9-4062-a32d-838358bd9a60",
+            "label": "Yes",
+            "type": "Answer",
+            "name": null,
+            "value": "1",
+            "validMinRange": null,
+            "validMaxRange": null,
+            "children": [],
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "b01e8945-ab0c-4bf2-af11-baaf7cefc4ae"
+              }
+            ]
+          },
+          {
+            "id": "af8eccc5-209d-4ee6-96a1-ae799d9a8a9f",
+            "label": "No",
+            "type": "Answer",
+            "name": null,
+            "value": "2",
+            "validMinRange": null,
+            "validMaxRange": null,
+            "children": [],
+            "mdeDependentQuestions": []
+          },
+          {
+            "id": "ed5b4275-6471-4b95-b55a-cc59b195a583",
+            "type": "Answer",
+            "label": "Unknown",
+            "name": null,
+            "value": "3",
+            "validMinRange": null,
+            "validMaxRange": null,
+            "children": [],
+            "mdeDependentQuestions": []
+          }
+        ]
       },
       {
         "id": "b01e8945-ab0c-4bf2-af11-baaf7cefc4ae",
@@ -543,43 +583,130 @@
             "id": "1af98459-4a9c-4f3d-8fb1-e5aaf6801b7b",
             "type": "Answer",
             "label": "Screening",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa"
+              }
+            ]
           },
           {
             "id": "20a6ca6a-d90b-4520-9dfb-f244e53a0b8d",
             "type": "Answer",
             "label": "Surveillance",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa"
+              }
+            ]
           },
           {
             "id": "b7bcca0e-454a-4fee-ba44-ce29daf89022",
             "type": "Answer",
             "label": "Non-program Pap, Referred in for diagnostic evaluation",
-            "value": "3"
+            "value": "3",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa",
+                "option": "df02de55-6575-4846-8b1d-200ed0a4887d"
+              }
+            ]
           },
           {
             "id": "f65521df-15c4-4a0b-87a8-2530c2cc5b23",
             "type": "Answer",
             "label": "No Pap",
-            "value": "4"
+            "value": "4",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "790145d4-a7b2-423b-bf07-b39a79c9aaa1"
+              },
+              {
+                "isRequired": false,
+                "question": "715da273-19d0-43bb-875b-e17a1d933181"
+              },
+              {
+                "isRequired": false,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              },
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa"
+              }
+            ]
           },
           {
             "id": "106c32bb-1128-47ee-828d-ac4cef0ddda2",
             "type": "Answer",
             "label": "No Cervical Service",
-            "value": "5"
+            "value": "5",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "7b24d985-03b0-438d-a103-a23d99ceaefb"
+              },
+              {
+                "isRequired": false,
+                "question": "dad682d1-77b1-4082-9b7e-aaa26630a23d"
+              },
+              {
+                "isRequired": false,
+                "question": "31c37792-6ce9-43ba-b96a-92376c62a862"
+              },
+              {
+                "isRequired": false,
+                "question": "790145d4-a7b2-423b-bf07-b39a79c9aaa1"
+              },
+              {
+                "isRequired": false,
+                "question": "715da273-19d0-43bb-875b-e17a1d933181"
+              },
+              {
+                "isRequired": false,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              },
+              {
+                "isRequired": false,
+                "question": "5d0a48dd-1094-4279-bcc3-a3641135b5a2"
+              },
+              {
+                "isRequired": false,
+                "question": "56f9937f-4d67-4d79-8e4f-528ca65de5f5"
+              },
+              {
+                "isRequired": false,
+                "question": "83b46027-6c25-49a8-bebb-c53aac865c59"
+              }
+            ]
           },
           {
             "id": "8f5f0923-6244-4869-916a-9a1ffb870b01",
             "type": "Answer",
             "label": "Pap after primary HPV+",
-            "value": "6"
+            "value": "6",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa"
+              }
+            ]
           },
           {
             "id": "b9335e65-137c-4ac4-856b-8c49338c2a1d",
             "type": "Answer",
             "label": "Unknown",
-            "value": "9"
+            "value": "9",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa"
+              }
+            ]
           }
         ]
       },
@@ -684,85 +811,208 @@
             "id": "ba58d482-b12f-4555-904c-587ba8e2fee5",
             "type": "Answer",
             "label": "Negative for intraepithelial lesion or malignancy",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              }
+            ]
           },
           {
             "id": "56008fa9-f3da-484e-ae3e-12391c77e062",
             "type": "Answer",
-            "label": "Infection/Inflammation/Reactive Changes (Beth1991)",
-            "value": "2"
+            "label": "Infection/Inflammation/Reactive Changes (Bethesda 1991)",
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              }
+            ]
           },
           {
             "id": "44d5b052-64ff-4561-a3eb-141ce548e83f",
             "type": "Answer",
             "label": "Atypical squamous cells of undetermined significance (ASC-US)",
-            "value": "3"
+            "value": "3",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              }
+            ]
           },
           {
             "id": "5b89f9b3-84f6-44a9-82b9-327a4329574f",
             "type": "Answer",
             "label": "Low Grade SIL (including HPV changes)",
-            "value": "4"
+            "value": "4",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              }
+            ]
           },
           {
             "id": "f60a1eec-75b3-4fd0-bd3b-3ecaf501e2d9",
             "type": "Answer",
-            "label": "Atypical squamous cells cannot exclude HSIL (ASC-H Beth2001)",
-            "value": "5"
+            "label": "Atypical squamous cells cannot exclude HSIL (ASC-H Bethesda 2001)",
+            "value": "5",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              },
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa",
+                "option": "df02de55-6575-4846-8b1d-200ed0a4887d"
+              }
+            ]
           },
           {
             "id": "0484d08e-1a53-491b-bcc2-deaf392bb86b",
             "type": "Answer",
             "label": "High Grade SIL",
-            "value": "6"
+            "value": "6",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              },
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa",
+                "option": "df02de55-6575-4846-8b1d-200ed0a4887d"
+              }
+            ]
           },
           {
             "id": "b2064ffe-bbdc-4795-8569-e76127b28c0a",
             "type": "Answer",
             "label": "Squamous Cell Carcinoma",
-            "value": "7"
+            "value": "7",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              },
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa",
+                "option": "df02de55-6575-4846-8b1d-200ed0a4887d"
+              }
+            ]
           },
           {
             "id": "a7c068e4-48f1-4313-ae9e-37776f27cb3f",
             "type": "Answer",
-            "label": "Atypical Glandular Cells (Beth2014)",
-            "value": "8"
+            "label": "Atypical Glandular Cells (Bethesda 2014)",
+            "value": "8",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              },
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa",
+                "option": "df02de55-6575-4846-8b1d-200ed0a4887d"
+              }
+            ]
           },
           {
             "id": "680bf2e5-fe05-4eb8-991c-25a0887200f8",
             "type": "Answer",
-            "label": "Adenocarcinoma in situ (AIS) (Beth2014)",
-            "value": "9"
+            "label": "Adenocarcinoma in situ (AIS) (Bethesda 2014)",
+            "value": "9",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              },
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa",
+                "option": "df02de55-6575-4846-8b1d-200ed0a4887d"
+              }
+            ]
           },
           {
             "id": "59a482f4-63b2-456e-9566-f0787893da76",
             "type": "Answer",
-            "label": "Adenocarcinoma (Beth2014)",
-            "value": "10"
+            "label": "Adenocarcinoma (Bethesda 2014)",
+            "value": "10",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              },
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa",
+                "option": "df02de55-6575-4846-8b1d-200ed0a4887d"
+              }
+            ]
           },
           {
             "id": "4bc94857-fd95-4147-a9ac-4f972bb73a11",
             "type": "Answer",
             "label": "Other",
-            "value": "11"
+            "value": "11",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "715da273-19d0-43bb-875b-e17a1d933181"
+              },
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              }
+            ]
           },
           {
             "id": "ced284b1-3be4-46ca-b326-c4b7a6b9aece",
             "type": "Answer",
             "label": "Unsatisfactory",
-            "value": "12"
+            "value": "12",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              }
+            ]
           },
           {
             "id": "447fb7a4-c517-477d-9775-b726ea976fda",
             "type": "Answer",
             "label": "Result Pending",
-            "value": "13"
+            "value": "13",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              }
+            ]
           },
           {
             "id": "67080f7e-57d5-4dfb-8ebf-c15444fcb399",
             "type": "Answer",
             "label": "Result unknown, presumed abnormal, Pap test from non- program funded source",
-            "value": "14"
+            "value": "14",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "511cad67-c243-42f3-83c3-307cfef8033a"
+              },
+              {
+                "isRequired": true,
+                "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa",
+                "option": "df02de55-6575-4846-8b1d-200ed0a4887d"
+              }
+            ]
           }
         ]
       },
@@ -824,7 +1074,17 @@
             "id": "f6b77d0c-976e-4b4a-8fc4-8d3e518f28c7",
             "type": "Answer",
             "label": "Test not done",
-            "value": "3"
+            "value": "3",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "56f9937f-4d67-4d79-8e4f-528ca65de5f5"
+              },
+              {
+                "isRequired": false,
+                "question": "83b46027-6c25-49a8-bebb-c53aac865c59"
+              }
+            ]
           },
           {
             "id": "3e4e398f-e297-4b9f-9470-47f9802c2000",
@@ -852,31 +1112,61 @@
             "id": "6c18347d-1503-4442-9fb8-e16feff08616",
             "type": "Answer",
             "label": "Positive with genotyping not done/unknown",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "83b46027-6c25-49a8-bebb-c53aac865c59"
+              }
+            ]
           },
           {
             "id": "95804b84-7da6-417f-a5e7-7b55eb3b3aa5",
             "type": "Answer",
             "label": "Negative",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "83b46027-6c25-49a8-bebb-c53aac865c59"
+              }
+            ]
           },
           {
             "id": "225fef0e-5959-4c56-83d5-80128e1c5252",
             "type": "Answer",
             "label": "Positive with positive genotyping",
-            "value": "4"
+            "value": "4",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "83b46027-6c25-49a8-bebb-c53aac865c59"
+              }
+            ]
           },
           {
             "id": "6089b971-9a74-49df-b307-2312868dc8c4",
             "type": "Answer",
             "label": "Positive with negative genotyping",
-            "value": "5"
+            "value": "5",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "83b46027-6c25-49a8-bebb-c53aac865c59"
+              }
+            ]
           },
           {
             "id": "606d933b-531f-4307-8aa8-221d674d978b",
             "type": "Answer",
             "label": "Unknown",
-            "value": "9"
+            "value": "9",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "83b46027-6c25-49a8-bebb-c53aac865c59"
+              }
+            ]
           }
         ]
       },
