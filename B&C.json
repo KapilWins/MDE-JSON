@@ -10,10 +10,11 @@
     "mdeFields": [
       {
         "id": "e4e498b0-4419-4d16-a58e-4eb64ed03851",
+        "itemNo": "1.01",
         "fieldName": "StFIPS",
         "fieldFullName": "State, Territorial or Tribal Program of Screening",
         "genericName": "State, Territorial or Tribal Program of Screening",
-        "type": "number",
+        "type": "string",
         "itemLength": 2,
         "fieldLength": 2,
         "hasSubQuestion": false,
@@ -25,6 +26,7 @@
       },
       {
         "id": "60721367-2338-4a4c-80a8-58e7952dcc76",
+        "itemNo": "1.02",
         "fieldName": "EncodeID",
         "fieldFullName": "Unique Patient ID Number",
         "genericName": "Unique Patient ID Number",
@@ -35,11 +37,12 @@
         "isMultiSelect": false,
         "isRequired": true,
         "beginningPosition": 3,
-        "leadingZeros": "no",
+        "leadingZeros": "yes",
         "justification": "Left"
       },
       {
         "id": "7ed4c592-7cdd-49a1-b991-2823e331db9d",
+        "itemNo": "1.03",
         "fieldName": "Record Identifier",
         "fieldFullName": "Record Identifier",
         "genericName": "Record Identifier",
@@ -65,6 +68,7 @@
     "mdeFields": [
       {
         "id": "ae0d88f8-15b8-4805-bb24-e4d973ed3d1b",
+        "itemNo": "2.01",
         "fieldName": "County of Residence",
         "fieldFullName": "County of Residence",
         "genericName": "County of Residence",
@@ -80,21 +84,23 @@
       },
       {
         "id": "99b4c897-71ae-444a-919c-2c51c31f4f7a",
+        "itemNo": "2.02",
         "fieldName": "State or Territory of Residence",
         "fieldFullName": "State or Territory of Residence",
         "genericName": "State or Territory of Residence",
-        "type": "number",
+        "type": "string",
         "itemLength": 2,
         "fieldLength": 2,
         "beginningPosition": 29,
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "leadingZeros": "no",
+        "leadingZeros": "yes",
         "justification": "Right"
       },
       {
         "id": "08c8f484-7c33-40b8-a3b7-8b0dd285a44e",
+        "itemNo": "2.03",
         "fieldName": "ZIP",
         "fieldFullName": "ZIP Code of Residence",
         "type": "number",
@@ -109,6 +115,7 @@
       },
       {
         "id": "b9ce8e72-bbe2-47a9-825e-245fab3868ae",
+        "itemNo": "2.04",
         "fieldName": "MYB",
         "fieldFullName": "Date of Birth",
         "type": "string",
@@ -118,12 +125,13 @@
         "beginningPosition": 36,
         "hasSubQuestion": false,
         "isMultiSelect": false,
-        "isRequired": false,
-        "leadingZeros": "no",
-        "justification": "Right"
+        "isRequired": true,
+        "leadingZeros": "yes",
+        "justification": "Left"
       },
       {
         "id": "a43a471e-7287-4989-84e8-af3e68e77e2d",
+        "itemNo": "2.05",
         "fieldName": "Latino",
         "fieldFullName": "Hispanic or Latino origin",
         "genericName": "Hispanic or Latino ",
@@ -135,7 +143,7 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "no",
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "63356481-ff7e-4e47-9fb2-77ead06b115a",
@@ -159,6 +167,7 @@
       },
       {
         "id": "08aff0de-a79e-4874-aa1e-dc08e1fab333",
+        "itemNo": "2.06.1",
         "fieldName": "Race1",
         "fieldFullName": "Race 1",
         "genericName": "Race 1",
@@ -170,7 +179,7 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "no",
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "55f40beb-1d43-4356-8d53-1dc9d0a918bc",
@@ -218,6 +227,7 @@
       },
       {
         "id": "8524f599-a32f-4185-bd8a-6fd4fa4ee034",
+        "itemNo": "2.06.2",
         "fieldName": "Race2",
         "genericName": "Race 2",
         "fieldFullName": "Race 2",
@@ -228,7 +238,7 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right",
+        "justification": "Left",
         "leadingZeros": "no",
         "mdeFieldsOptions": [
           {
@@ -271,6 +281,7 @@
       },
       {
         "id": "c16aa484-025d-4ddd-a0dd-bdb317e6171c",
+        "itemNo": "2.06.3",
         "fieldName": "Race3",
         "genericName": "Race 3",
         "fieldFullName": "Race 3",
@@ -281,7 +292,7 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right",
+        "justification": "Left",
         "leadingZeros": "no",
         "mdeFieldsOptions": [
           {
@@ -324,6 +335,7 @@
       },
       {
         "id": "e5d36805-2847-43a8-b858-1bd1d8bd6a73",
+        "itemNo": "2.06.4",
         "fieldName": "Race4",
         "genericName": "Race 4",
         "fieldFullName": "Race 4",
@@ -334,7 +346,7 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right",
+        "justification": "Left",
         "leadingZeros": "no",
         "mdeFieldsOptions": [
           {
@@ -377,6 +389,7 @@
       },
       {
         "id": "cac1663f-60ca-48d6-8352-fd87be106e6e",
+        "itemNo": "2.06.5",
         "fieldName": "Race5",
         "genericName": "Race 5",
         "fieldFullName": "Race 5",
@@ -387,7 +400,7 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right",
+        "justification": "Left",
         "leadingZeros": "no",
         "mdeFieldsOptions": [
           {
@@ -441,6 +454,7 @@
     "mdeFields": [
       {
         "id": "933d3bf6-1fb7-4746-ab4e-1b94ccce3aca",
+        "itemNo": "3.01",
         "fieldName": "Patient Navigation Paid by NBCCEDP funds",
         "fieldFullName": "Patient Navigation Paid by NBCCEDP funds",
         "genericName": "Patient Navigation Paid by NBCCEDP funds",
@@ -448,7 +462,7 @@
         "itemLength": 1,
         "fieldLength": 1,
         "beginningPosition": 48,
-        "justification": "Right",
+        "justification": "Left",
         "leadingZeros": "no",
         "hasSubQuestion": false,
         "isMultiSelect": false,
@@ -501,14 +515,15 @@
     "mdeFields": [
       {
         "id": "fad4557c-7bc4-4476-869f-f6f7efe006e5",
+        "itemNo": "4.01",
         "fieldName": "Previous Pap Test",
         "fieldFullName": "Previous Pap Test",
         "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "beginningPosition": 49,
-        "leadingZeros": "yes",
-        "justification": "Right",
+        "leadingZeros": "no",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "a4187244-47b9-4062-a32d-838358bd9a60",
@@ -516,9 +531,6 @@
             "type": "Answer",
             "name": null,
             "value": "1",
-            "validMinRange": null,
-            "validMaxRange": null,
-            "children": [],
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
@@ -531,11 +543,7 @@
             "label": "No",
             "type": "Answer",
             "name": null,
-            "value": "2",
-            "validMinRange": null,
-            "validMaxRange": null,
-            "children": [],
-            "mdeDependentQuestions": []
+            "value": "2"
           },
           {
             "id": "ed5b4275-6471-4b95-b55a-cc59b195a583",
@@ -544,14 +552,13 @@
             "name": null,
             "value": "3",
             "validMinRange": null,
-            "validMaxRange": null,
-            "children": [],
-            "mdeDependentQuestions": []
+            "validMaxRange": null
           }
         ]
       },
       {
         "id": "b01e8945-ab0c-4bf2-af11-baaf7cefc4ae",
+        "itemNo": "4.02",
         "fieldName": "Date of Previous Pap Test",
         "fieldFullName": "Date of Previous Pap Test",
         "type": "string",
@@ -559,14 +566,15 @@
         "itemLength": 6,
         "fieldLength": 6,
         "beginningPosition": 50,
-        "leadingZeros": "no",
+        "leadingZeros": "yes",
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right"
+        "justification": "Left"
       },
       {
         "id": "3ac2d708-0ddc-4477-8db5-b32eb4a55a47",
+        "itemNo": "4.03",
         "fieldName": "Indication for Pap Test",
         "fieldFullName": "Indication for Pap Test",
         "type": "number",
@@ -577,7 +585,7 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "1af98459-4a9c-4f3d-8fb1-e5aaf6801b7b",
@@ -613,6 +621,10 @@
                 "isRequired": true,
                 "question": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa",
                 "option": "df02de55-6575-4846-8b1d-200ed0a4887d"
+              },
+              {
+                "isRequired": true,
+                "question": "31c37792-6ce9-43ba-b96a-92376c62a862"
               }
             ]
           },
@@ -712,6 +724,7 @@
       },
       {
         "id": "7b24d985-03b0-438d-a103-a23d99ceaefb",
+        "itemNo": "4.04",
         "fieldName": "Cervical Service Paid by NBCCEDP Funds",
         "fieldFullName": "Cervical Service Paid by NBCCEDP Funds",
         "type": "number",
@@ -746,6 +759,7 @@
       },
       {
         "id": "dad682d1-77b1-4082-9b7e-aaa26630a23d",
+        "itemNo": "4.05",
         "fieldName": "High Risk for Cervical Cancer",
         "fieldFullName": "High Risk for Cervical Cancer",
         "type": "string",
@@ -756,7 +770,7 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "88f40f00-b690-461d-bca5-f6e164b35938",
@@ -780,14 +794,15 @@
       },
       {
         "id": "31c37792-6ce9-43ba-b96a-92376c62a862",
+        "itemNo": "4.06",
         "fieldName": "Cervical Diagnostic Referral Date",
         "fieldFullName": "Cervical Diagnostic Referral Date",
         "type": "string",
-        "otherFormat": "MMDDYYYY;",
+        "otherFormat": "MMDDYYYY",
         "itemLength": 8,
         "fieldLength": 8,
         "beginningPosition": 59,
-        "leadingZeros": "no",
+        "leadingZeros": "yes",
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
@@ -795,6 +810,7 @@
       },
       {
         "id": "790145d4-a7b2-423b-bf07-b39a79c9aaa1",
+        "itemNo": "4.07",
         "fieldName": "Result of Pap Test",
         "fieldFullName": "Result of Pap Test",
         "type": "number",
@@ -1018,6 +1034,7 @@
       },
       {
         "id": "715da273-19d0-43bb-875b-e17a1d933181",
+        "itemNo": "4.08",
         "fieldName": "Other Pap Test Result",
         "fieldFullName": "Other Pap Test Result",
         "type": "string",
@@ -1032,6 +1049,7 @@
       },
       {
         "id": "511cad67-c243-42f3-83c3-307cfef8033a",
+        "itemNo": "4.09",
         "fieldName": "Date of Pap Test",
         "fieldFullName": "Date of Pap Test",
         "type": "number",
@@ -1042,11 +1060,12 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "leadingZeros": "no",
-        "justification": "Right"
+        "leadingZeros": "yes",
+        "justification": "Left"
       },
       {
         "id": "5d0a48dd-1094-4279-bcc3-a3641135b5a2",
+        "itemNo": "4.10",
         "fieldName": "Indication for HPV Test",
         "fieldFullName": "Indication for HPV Test",
         "type": "string",
@@ -1056,7 +1075,7 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "b79de5bc-383f-4f5c-8485-7de59436b8cb",
@@ -1096,9 +1115,10 @@
       },
       {
         "id": "56f9937f-4d67-4d79-8e4f-528ca65de5f5",
+        "itemNo": "4.11",
         "fieldName": "HPV Test Result",
         "fieldFullName": "HPV Test Result",
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "beginningPosition": 98,
@@ -1106,7 +1126,7 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "yes",
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "6c18347d-1503-4442-9fb8-e16feff08616",
@@ -1172,6 +1192,7 @@
       },
       {
         "id": "83b46027-6c25-49a8-bebb-c53aac865c59",
+        "itemNo": "4.12",
         "fieldName": "Date of HPV Test",
         "fieldFullName": "Date of HPV Test",
         "type": "string",
@@ -1182,10 +1203,12 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right"
+        "justification": "Left",
+        "leadingZeros": "yes"
       },
       {
         "id": "5538ce50-ef10-4d36-a84c-1f3db0c61ffa",
+        "itemNo": "4.13",
         "fieldName": "Diagnostic Work-up Planned for Cervical Dysplasia or Cancer",
         "fieldFullName": "Diagnostic Work-up Planned for Cervical Dysplasia or Cancer",
         "type": "number",
@@ -1197,13 +1220,23 @@
         "isMultiSelect": false,
         "isRequired": false,
         "minRequiredOptions": 1,
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "df02de55-6575-4846-8b1d-200ed0a4887d",
             "type": "Answer",
             "label": "Diagnostic work-up planned on basis of abnormal Pap test, HPV test or pelvic exam",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "8e87ec3c-e7d6-4362-afbb-2d371db4d2ed"
+              },
+              {
+                "isRequired": true,
+                "question": "5e5fb34d-edfe-4ddb-aea4-5d8752638b81"
+              }
+            ]
           },
           {
             "id": "4aefe94f-b3a4-4f7a-bcab-f75f62f56c1b",
@@ -1232,8 +1265,9 @@
     "mdeFields": [
       {
         "id": "8cee7a5a-13f6-4678-94d9-9cc98f5f6eab",
+        "itemNo": "",
         "fieldName": "Indication for Initial Mammogram",
-        "fieldFullName": "Indication for InitialMammogram",
+        "fieldFullName": "Indication for Initial Mammogram",
         "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
@@ -1248,42 +1282,128 @@
             "id": "7da2bf79-4442-4873-b825-092ec9e26c55",
             "type": "Answer",
             "label": "Screening",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f"
+              }
+            ]
           },
           {
             "id": "0d98e09a-46e6-48ef-ae3c-d6615ae3bb55",
             "type": "Answer",
             "label": "Diagnostic",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f"
+              }
+            ]
           },
           {
             "id": "b40ac7ad-1d78-4ac0-ae5c-29538541d00a",
             "type": "Answer",
             "label": "Non-program mammogram, Referred in for diagnostic evaluation",
-            "value": "3"
+            "value": "3",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "154bb9b3-48b3-4936-a68e-a21943c48068"
+              },
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f"
+              },
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f",
+                "option": "dabfd6df-e70d-4b50-ad25-5e6a6fdbd389"
+              }
+            ]
           },
           {
             "id": "ab44fa70-2e91-4890-8600-a2b5170f2653",
             "type": "Answer",
             "label": "No mammogram",
-            "value": "4"
+            "value": "4",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "154bb9b3-48b3-4936-a68e-a21943c48068"
+              },
+              {
+                "isRequired": false,
+                "question": "ac0b3fc6-dd43-439d-a07d-2442e9af323e"
+              },
+              {
+                "isRequired": false,
+                "question": "aa993051-9ccc-4e7f-92b6-828c9c44a59e"
+              },
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f"
+              }
+            ]
           },
           {
             "id": "1884fa6d-1654-4084-b625-ff16b0e3e17c",
             "type": "Answer",
             "label": "No Breast Service",
-            "value": "5"
+            "value": "5",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "f7847123-1cf3-416e-a747-aa2fa5b9a773"
+              },
+              {
+                "isRequired": false,
+                "question": "c99c1f22-8657-4209-8bf1-74141ed992a0"
+              },
+              {
+                "isRequired": false,
+                "question": "e4961149-b147-4e57-8865-a863ee65293a"
+              },
+              {
+                "isRequired": false,
+                "question": "7e9ce003-4c9e-4eb7-bbf2-2c8fb712ff4f"
+              },
+              {
+                "isRequired": false,
+                "question": "ac0b3fc6-dd43-439d-a07d-2442e9af323e"
+              },
+              {
+                "isRequired": false,
+                "question": "aa993051-9ccc-4e7f-92b6-828c9c44a59e"
+              },
+              {
+                "isRequired": false,
+                "question": "8013f148-4eb1-49bb-b3df-f2fa6ac0193c"
+              },
+              {
+                "isRequired": false,
+                "question": "62ea0afe-8e72-44eb-a9d7-5f46157d03a9"
+              }
+            ]
           },
           {
             "id": "59b29912-4025-4307-a7f4-047c6e44a412",
             "type": "Answer",
             "label": "Unknown",
-            "value": "9"
+            "value": "9",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f"
+              }
+            ]
           }
         ]
       },
       {
         "id": "f7847123-1cf3-416e-a747-aa2fa5b9a773",
+        "itemNo": "",
         "fieldName": "Breast Service Paid by NBCCEDP Funds",
         "fieldFullName": "Breast Service Paid by NBCCEDP Funds",
         "type": "string",
@@ -1318,6 +1438,7 @@
       },
       {
         "id": "154bb9b3-48b3-4936-a68e-a21943c48068",
+        "itemNo": "",
         "fieldName": "Breast Diagnostic Referral Date",
         "fieldFullName": "Breast Diagnostic Referral Date",
         "type": "string",
@@ -1333,6 +1454,7 @@
       },
       {
         "id": "c99c1f22-8657-4209-8bf1-74141ed992a0",
+        "itemNo": "",
         "fieldName": "High Risk for Breast Cancer",
         "fieldFullName": "High Risk for Breast Cancer",
         "type": "string",
@@ -1355,18 +1477,31 @@
             "id": "b7ddd01a-f4cc-4dfa-be12-f0a0ea35f988",
             "type": "Answer",
             "label": "No",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "e4961149-b147-4e57-8865-a863ee65293a"
+              }
+            ]
           },
           {
             "id": "87af3f37-557b-4bb8-9e1a-393164d88d20",
             "type": "Answer",
             "label": "Not Assessed/Unknown",
-            "value": "3"
+            "value": "9",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "e4961149-b147-4e57-8865-a863ee65293a"
+              }
+            ]
           }
         ]
       },
       {
         "id": "e4961149-b147-4e57-8865-a863ee65293a",
+        "itemNo": "",
         "fieldName": "Screening MRI results",
         "fieldFullName": "Screening MRI results",
         "type": "string",
@@ -1383,49 +1518,112 @@
             "id": "fc1c6977-f404-4708-9669-15841011ab06",
             "type": "Answer",
             "label": "Negative (Category 1)",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "7e9ce003-4c9e-4eb7-bbf2-2c8fb712ff4f"
+              }
+            ]
           },
           {
             "id": "5b03890f-c6c7-436f-8f61-0fddb34cb1e2",
             "type": "Answer",
             "label": "Benign Finding (Category 2)",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "7e9ce003-4c9e-4eb7-bbf2-2c8fb712ff4f"
+              }
+            ]
           },
           {
             "id": "49e3fa7b-1c0b-4328-8b24-cff1fe3f12d1",
             "type": "Answer",
             "label": "Probably Benign indicated (Category 3)",
-            "value": "3"
+            "value": "3",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "7e9ce003-4c9e-4eb7-bbf2-2c8fb712ff4f"
+              }
+            ]
           },
           {
             "id": "7dbaabae-547b-474e-802d-ee582a3d5653",
             "type": "Answer",
             "label": "Suspicious (Category 4)",
-            "value": "4"
+            "value": "4",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "7e9ce003-4c9e-4eb7-bbf2-2c8fb712ff4f"
+              },
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f",
+                "option": "dabfd6df-e70d-4b50-ad25-5e6a6fdbd389"
+              }
+            ]
           },
           {
             "id": "304811f9-851b-41ce-916a-76c60f051c6f",
             "type": "Answer",
             "label": "Highly Suggestive of Malignancy (Category 5)",
-            "value": "5"
+            "value": "5",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "7e9ce003-4c9e-4eb7-bbf2-2c8fb712ff4f"
+              },
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f",
+                "option": "dabfd6df-e70d-4b50-ad25-5e6a6fdbd389"
+              }
+            ]
           },
           {
             "id": "144b2b73-177f-48fe-a25e-a91c1ed6b6e9",
             "type": "Answer",
             "label": "Known Malignancy (Category 6)",
-            "value": "6"
+            "value": "6",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "7e9ce003-4c9e-4eb7-bbf2-2c8fb712ff4f"
+              }
+            ]
           },
           {
             "id": "3dced4d0-e3e3-4926-af02-973774db9c76",
             "type": "Answer",
             "label": "Incomplete — Need Additional Imaging Evaluation (Category 0)",
-            "value": "7"
+            "value": "7",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "7e9ce003-4c9e-4eb7-bbf2-2c8fb712ff4f"
+              },
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f",
+                "option": "dabfd6df-e70d-4b50-ad25-5e6a6fdbd389"
+              }
+            ]
           },
           {
             "id": "bf9d5965-bce4-4591-994e-83715ed174c6",
             "type": "Answer",
             "label": "Results Pending",
-            "value": "8"
+            "value": "8",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "7e9ce003-4c9e-4eb7-bbf2-2c8fb712ff4f"
+              }
+            ]
           },
           {
             "id": "0fa55fbe-491c-4cad-b990-2148c045c62f",
@@ -1437,6 +1635,7 @@
       },
       {
         "id": "7e9ce003-4c9e-4eb7-bbf2-2c8fb712ff4f",
+        "itemNo": "",
         "fieldName": "Date of Screening MRI",
         "fieldFullName": "Date of Screening MRI",
         "type": "string",
@@ -1453,6 +1652,7 @@
       },
       {
         "id": "ac0b3fc6-dd43-439d-a07d-2442e9af323e",
+        "itemNo": "",
         "fieldName": "Initial Mammography Test Result",
         "fieldFullName": "Initial Mammography Test Result",
         "type": "number",
@@ -1469,66 +1669,147 @@
             "id": "f286e016-4936-44a6-9593-dfc2241fd8fc",
             "type": "Answer",
             "label": "Negative (BI-RADS 1)",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "aa993051-9ccc-4e7f-92b6-828c9c44a59e"
+              }
+            ]
           },
           {
             "id": "db02a401-f58a-4f4c-841e-afee1bafc893",
             "type": "Answer",
             "label": "Benign Finding (BI-RADS 2)",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "aa993051-9ccc-4e7f-92b6-828c9c44a59e"
+              }
+            ]
           },
           {
             "id": "cd3bb49f-27b1-4b58-aa61-813e5773493b",
             "type": "Answer",
             "label": "*Probably Benign - Initial short interval follow-up suggested (BI-RADS 3)",
-            "value": "3"
+            "value": "3",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "aa993051-9ccc-4e7f-92b6-828c9c44a59e"
+              }
+            ]
           },
           {
             "id": "26da1e42-1cdb-47c5-9239-f0e02215e135",
             "type": "Answer",
             "label": "Suspicious Abnormality - Biopsy should be considered (BI-RADS 4)",
-            "value": "4"
+            "value": "4",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "aa993051-9ccc-4e7f-92b6-828c9c44a59e"
+              },
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f",
+                "option": "dabfd6df-e70d-4b50-ad25-5e6a6fdbd389"
+              }
+            ]
           },
           {
             "id": "81c2a6e8-93a7-4cf3-b3f8-82a8e6cff518",
             "type": "Answer",
             "label": "Highly Suggestive of Malignancy - Appropriate action should be taken (BI-RADS 5)",
-            "value": "5"
+            "value": "5",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "aa993051-9ccc-4e7f-92b6-828c9c44a59e"
+              },
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f",
+                "option": "dabfd6df-e70d-4b50-ad25-5e6a6fdbd389"
+              }
+            ]
           },
           {
             "id": "23d16e42-92cb-4159-a494-31ddcdc79122",
             "type": "Answer",
             "label": "Unsatisfactory - This applies if the mammogram was technically unsatisfactory and could not be interpreted by radiologist.",
-            "value": "7"
+            "value": "7",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "aa993051-9ccc-4e7f-92b6-828c9c44a59e"
+              }
+            ]
           },
           {
             "id": "3255f80d-c74c-4301-a3ca-0af66efc8591",
             "type": "Answer",
             "label": "Result pending",
-            "value": "10"
+            "value": "10",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "aa993051-9ccc-4e7f-92b6-828c9c44a59e"
+              }
+            ]
           },
           {
             "id": "299bc3a3-ca40-4472-bac6-f549d72cb0ad",
             "type": "Answer",
             "label": "Result unknown, presumed abnormal, mammogram from non-program funded source",
-            "value": "11"
+            "value": "11",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "aa993051-9ccc-4e7f-92b6-828c9c44a59e"
+              },
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f",
+                "option": "dabfd6df-e70d-4b50-ad25-5e6a6fdbd389"
+              }
+            ]
           },
           {
             "id": "b5d7232e-9f20-4a58-a025-07a9262efe25",
             "type": "Answer",
             "label": "Need evaluation or film comparison (BI-RADS 0)",
-            "value": "14"
+            "value": "14",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "aa993051-9ccc-4e7f-92b6-828c9c44a59e"
+              },
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f",
+                "option": "dabfd6df-e70d-4b50-ad25-5e6a6fdbd389"
+              }
+            ]
           },
           {
             "id": "b014898d-2341-4f55-aae1-5433e89d3dd8",
             "type": "Answer",
             "label": "Known Biopsy-Proven Malignancy (BI-RADS 6)",
-            "value": "15"
+            "value": "15",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "aa993051-9ccc-4e7f-92b6-828c9c44a59e"
+              }
+            ]
           }
         ]
       },
       {
         "id": "aa993051-9ccc-4e7f-92b6-828c9c44a59e",
+        "itemNo": "",
         "fieldName": "Date of Initial Mammogram",
         "fieldFullName": "Date of Initial Mammogram",
         "type": "string",
@@ -1545,6 +1826,7 @@
       },
       {
         "id": "8013f148-4eb1-49bb-b3df-f2fa6ac0193c",
+        "itemNo": "",
         "fieldName": "Clinical Breast Exam",
         "fieldFullName": "Clinical Breast Exam",
         "type": "string",
@@ -1563,26 +1845,50 @@
             "id": "09c47140-ac14-49ba-b68f-f2f03de98df3",
             "type": "Answer",
             "label": "Normal/Benign findings - schedule for routine CBE in one year",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "62ea0afe-8e72-44eb-a9d7-5f46157d03a9"
+              }
+            ]
           },
           {
             "id": "f8d9bdb8-2bff-49a7-83d5-8d0560cd1bde",
             "type": "Answer",
             "label": "Abnormality suspicious for cancer - diagnostic evaluation needed",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "62ea0afe-8e72-44eb-a9d7-5f46157d03a9"
+              },
+              {
+                "isRequired": true,
+                "question": "91a3d656-a01c-4532-863f-c5a9d332d37f",
+                "option": "dabfd6df-e70d-4b50-ad25-5e6a6fdbd389"
+              }
+            ]
           },
           {
             "id": "6cb3a645-5158-4c6f-bcf0-f0548392eed6",
             "type": "Answer",
             "label": "Not performed",
-            "value": "5"
+            "value": "5",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "62ea0afe-8e72-44eb-a9d7-5f46157d03a9"
+              }
+            ]
           }
         ]
       },
       {
         "id": "62ea0afe-8e72-44eb-a9d7-5f46157d03a9",
-        "fieldName": "Date of Clinical Breast Exam",
-        "fieldFullName": "Date of Clinical Breast Exam",
+        "itemNo": "",
+        "fieldName": "Date of Clinical Breast Exam (CBE)",
+        "fieldFullName": "Date of Clinical Breast Exam (CBE)",
         "type": "string",
         "otherFormat": "MMDDYYYY",
         "itemLength": 8,
@@ -1597,6 +1903,7 @@
       },
       {
         "id": "91a3d656-a01c-4532-863f-c5a9d332d37f",
+        "itemNo": "",
         "fieldName": "Additional Procedures Needed to Complete Breast Cycle",
         "fieldFullName": "Additional Procedures Needed to Complete Breast Cycle",
         "type": "string",
@@ -1606,16 +1913,24 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "leadingZeros": "yes",
-        "validMinRange": "0012",
-        "validMaxRange": "3000",
+        "leadingZeros": "no",
         "justification": "Right",
         "mdeFieldsOptions": [
           {
-            "id": "91a3d656-a01c-4532-863f-c5a9d332d37f",
+            "id": "dabfd6df-e70d-4b50-ad25-5e6a6fdbd389",
             "type": "Answer",
             "label": "Additional procedures needed or planned",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "8ca150cd-0395-47a8-aa1a-d416ef1a8cac"
+              },
+              {
+                "isRequired": true,
+                "question": "8d62767e-6755-4596-a4d5-e3872b9c606b"
+              }
+            ]
           },
           {
             "id": "adbe3e8a-1faf-4451-b39a-7fbb0ef4d7cf",
@@ -1633,6 +1948,7 @@
       },
       {
         "id": "c5c3f141-c52e-4d44-a680-3519f4f5183c",
+        "itemNo": "",
         "fieldName": "MDE Version Number",
         "fieldFullName": "MDE Version Number",
         "type": "string",
@@ -1674,6 +1990,7 @@
     "mdeFields": [
       {
         "id": "8e87ec3c-e7d6-4362-afbb-2d371db4d2ed",
+        "itemNo": "",
         "fieldName": "Status of Final Diagnosis",
         "fieldFullName": "Status of Final Diagnosis",
         "type": "string",
@@ -1684,42 +2001,81 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "yes",
-        "justification": "Right",
+        "justification": "left",
         "mdeFieldsOptions": [
           {
             "id": "a3093fa1-43ef-4e37-8a69-08383e7ddea2",
             "type": "Answer",
             "label": "Work-up complete",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "5e5fb34d-edfe-4ddb-aea4-5d8752638b81"
+              },
+              {
+                "isRequired": true,
+                "question": "336644a1-ccbc-4139-b7cc-504b11414038"
+              },
+              {
+                "isRequired": true,
+                "question": "336644a1-ccbc-4139-b7cc-504b11414038"
+              }
+            ]
           },
           {
             "id": "3079d24f-dbf8-46bf-895e-81a1a96a2c46",
             "type": "Answer",
             "label": "Work-up pending",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "336644a1-ccbc-4139-b7cc-504b11414038"
+              }
+            ]
           },
           {
             "id": "27c09f49-4364-4bd3-bc33-041492f9f4d6",
             "type": "Answer",
             "label": "Lost to follow-up",
-            "value": "3"
+            "value": "3",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "336644a1-ccbc-4139-b7cc-504b11414038"
+              }
+            ]
           },
           {
             "id": "f8b2527b-afd6-42fa-b6e3-a1dab6c4d057",
             "type": "Answer",
             "label": "Work-up refused",
-            "value": "4"
+            "value": "4",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "336644a1-ccbc-4139-b7cc-504b11414038"
+              }
+            ]
           },
           {
             "id": "4a1ebc83-bc44-42e0-b6ee-f13bf00294f7",
             "type": "Answer",
             "label": "Irreconcilable",
-            "value": "9"
+            "value": "9",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "336644a1-ccbc-4139-b7cc-504b11414038"
+              }
+            ]
           }
         ]
       },
       {
         "id": "5e5fb34d-edfe-4ddb-aea4-5d8752638b81",
+        "itemNo": "",
         "fieldName": "Final Diagnosis",
         "fieldFullName": "Final Diagnosis",
         "type": "string",
@@ -1730,66 +2086,177 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "yes",
-        "justification": "Right",
+        "justification": "left",
         "mdeFieldsOptions": [
           {
             "id": "4e50cbde-37fe-4350-9cef-857b986441c6",
             "type": "Answer",
             "label": "Normal/Benign reaction/inflammation",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "78bd41e3-27d7-47a4-bc74-1f5a744025c0"
+              },
+              {
+                "isRequired": false,
+                "question": "3023dcea-ab38-4528-bdfb-dffc35b0104f"
+              },
+              {
+                "isRequired": false,
+                "question": "3fe2f2ed-5ba0-4c2e-8ce2-abd248a54ac7"
+              }
+            ]
           },
           {
             "id": "cbde3cb1-6f2d-4b45-b51a-17727c2896d1",
             "type": "Answer",
             "label": "HPV/Condylomata/Atypia",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "78bd41e3-27d7-47a4-bc74-1f5a744025c0"
+              }
+            ]
           },
           {
             "id": "af0f5500-b284-43e3-9c23-4bccaf5569d4",
             "type": "Answer",
             "label": "CIN1/mild dysplasia (biopsy diagnosis)",
-            "value": "3"
+            "value": "3",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "78bd41e3-27d7-47a4-bc74-1f5a744025c0"
+              }
+            ]
           },
           {
             "id": "6752489d-65c5-4011-9162-b69805464c81",
             "type": "Answer",
             "label": "CIN2/moderate dysplasia (biopsy diagnosis)",
-            "value": "4"
+            "value": "4",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "78bd41e3-27d7-47a4-bc74-1f5a744025c0"
+              },
+              {
+                "isRequired": true,
+                "question": "3023dcea-ab38-4528-bdfb-dffc35b0104f"
+              },
+              {
+                "isRequired": true,
+                "question": "3fe2f2ed-5ba0-4c2e-8ce2-abd248a54ac7"
+              }
+            ]
           },
           {
             "id": "2b7fa0f1-0d46-4ce1-ae6b-7a5cbf9eb11f",
             "type": "Answer",
             "label": "CIN3/severe dysplasia/Carcinoma in situ (Stage 0) or Adenocarcinoma In Situ of the cervix (AIS) (biopsy diagnosis)",
-            "value": "5"
+            "value": "5",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "78bd41e3-27d7-47a4-bc74-1f5a744025c0"
+              },
+              {
+                "isRequired": true,
+                "question": "3023dcea-ab38-4528-bdfb-dffc35b0104f"
+              },
+              {
+                "isRequired": true,
+                "question": "3fe2f2ed-5ba0-4c2e-8ce2-abd248a54ac7"
+              }
+            ]
           },
           {
             "id": "686d260d-92e6-44c3-b278-51f87783f0a3",
             "type": "Answer",
             "label": "Invasive Cervical Carcinoma (biopsy diagnosis)",
-            "value": "6"
+            "value": "6",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "78bd41e3-27d7-47a4-bc74-1f5a744025c0"
+              },
+              {
+                "isRequired": true,
+                "question": "3023dcea-ab38-4528-bdfb-dffc35b0104f"
+              },
+              {
+                "isRequired": true,
+                "question": "3fe2f2ed-5ba0-4c2e-8ce2-abd248a54ac7"
+              },
+              {
+                "isRequired": true,
+                "question": "3199383a-480c-43c3-b087-4abd3227fff2"
+              },
+              {
+                "isRequired": true,
+                "question": "0f739309-4a64-4630-915f-c5635f16c29a"
+              },
+              {
+                "isRequired": true,
+                "question": "ecb27718-fc6a-4352-b1ac-7312d842c732"
+              },
+              {
+                "isRequired": true,
+                "question": "455cdbae-254a-4e45-9a14-f43d55670761"
+              }
+            ]
           },
           {
             "id": "a8525a1a-09c4-4517-8163-7aba89fe7f07",
             "type": "Answer",
             "label": "Other",
-            "value": "7"
+            "value": "7",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "78bd41e3-27d7-47a4-bc74-1f5a744025c0"
+              }
+            ]
           },
           {
             "id": "91227a6a-21ea-4a67-a504-adf39017ce0d",
             "type": "Answer",
             "label": "Low grade SIL (biopsy diagnosis)",
-            "value": "8"
+            "value": "8",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "78bd41e3-27d7-47a4-bc74-1f5a744025c0"
+              }
+            ]
           },
           {
             "id": "89c36831-5622-4aa9-aa6f-18806bbdf553",
             "type": "Answer",
             "label": "High grade SIL (biopsy diagnosis)",
-            "value": "9"
+            "value": "9",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "78bd41e3-27d7-47a4-bc74-1f5a744025c0"
+              },
+              {
+                "isRequired": true,
+                "question": "3023dcea-ab38-4528-bdfb-dffc35b0104f"
+              },
+              {
+                "isRequired": true,
+                "question": "3fe2f2ed-5ba0-4c2e-8ce2-abd248a54ac7"
+              }
+            ]
           }
         ]
       },
       {
         "id": "78bd41e3-27d7-47a4-bc74-1f5a744025c0",
+        "itemNo": "",
         "fieldName": "Final Diagnosis - Other",
         "fieldFullName": "Final Diagnosis - Other",
         "type": "string",
@@ -1798,10 +2265,13 @@
         "beginningPosition": 152,
         "hasSubQuestion": false,
         "isMultiSelect": false,
-        "isRequired": false
+        "isRequired": false,
+        "leadingZeros": "yes",
+        "justification": "left"
       },
       {
         "id": "336644a1-ccbc-4139-b7cc-504b11414038",
+        "itemNo": "",
         "fieldName": "Date of Final Diagnosis",
         "fieldFullName": "Date of Final Diagnosis",
         "type": "string",
@@ -1811,7 +2281,9 @@
         "beginningPosition": 172,
         "hasSubQuestion": false,
         "isMultiSelect": false,
-        "isRequired": false
+        "isRequired": false,
+        "leadingZeros": "yes",
+        "justification": "left"
       }
     ]
   },
@@ -1826,6 +2298,7 @@
     "mdeFields": [
       {
         "id": "3023dcea-ab38-4528-bdfb-dffc35b0104f",
+        "itemNo": "",
         "fieldName": "Status of Treatment",
         "fieldFullName": "Status of Treatment",
         "type": "string",
@@ -1835,42 +2308,73 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right",
+        "justification": "left",
         "mdeFieldsOptions": [
           {
             "id": "bb49b6b0-a5b9-4475-8ab1-54800053d948",
             "type": "Answer",
             "label": "Treatment started",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "3fe2f2ed-5ba0-4c2e-8ce2-abd248a54ac7"
+              }
+            ]
           },
           {
             "id": "68e07b9e-7e2e-435e-80cf-525c0e068ba8",
             "type": "Answer",
             "label": "Treatment pending",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "3fe2f2ed-5ba0-4c2e-8ce2-abd248a54ac7"
+              }
+            ]
           },
           {
             "id": "33e6cd2b-d6c9-490c-a419-a3d497ea1339",
             "type": "Answer",
             "label": "Lost to follow-up",
-            "value": "3"
+            "value": "3",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "3fe2f2ed-5ba0-4c2e-8ce2-abd248a54ac7"
+              }
+            ]
           },
           {
             "id": "4c45b41e-5189-4546-af72-1c34c82199fa",
             "type": "Answer",
             "label": "Treatment refused",
-            "value": "4"
+            "value": "4",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "3fe2f2ed-5ba0-4c2e-8ce2-abd248a54ac7"
+              }
+            ]
           },
           {
             "id": "3f6412ce-ee1f-4375-ac50-185496a3b995",
             "type": "Answer",
             "label": "Treatment not needed",
-            "value": "5"
+            "value": "5",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "3fe2f2ed-5ba0-4c2e-8ce2-abd248a54ac7"
+              }
+            ]
           }
         ]
       },
       {
         "id": "3fe2f2ed-5ba0-4c2e-8ce2-abd248a54ac7",
+        "itemNo": "",
         "fieldName": "Date of Treatment Status",
         "fieldFullName": "Date of Treatment Status",
         "type": "string",
@@ -1882,7 +2386,7 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "yes",
-        "justification": "Right"
+        "justification": "left"
       }
     ]
   },
@@ -1897,6 +2401,7 @@
     "mdeFields": [
       {
         "id": "8ca150cd-0395-47a8-aa1a-d416ef1a8cac",
+        "itemNo": "",
         "fieldName": "Status of Final Diagnosis / Imaging",
         "fieldFullName": "Status of Final Diagnosis / Imaging",
         "genericName": null,
@@ -1914,36 +2419,75 @@
             "id": "a72445d0-beff-45b8-867c-42cccf6245ca",
             "type": "Answer",
             "label": "Work-up complete",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "8d62767e-6755-4596-a4d5-e3872b9c606b"
+              },
+              {
+                "isRequired": true,
+                "question": "7761296c-ac63-486b-bd81-ea469eeb9c3d"
+              },
+              {
+                "isRequired": true,
+                "question": "7761296c-ac63-486b-bd81-ea469eeb9c3d"
+              }
+            ]
           },
           {
             "id": "b0fc1af8-5445-47f7-a71f-5bd720a76d28",
             "type": "Answer",
             "label": "Work-up pending",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "7761296c-ac63-486b-bd81-ea469eeb9c3d"
+              }
+            ]
           },
           {
             "id": "87bc6199-34db-4563-9e4d-ff4c07374a76",
             "type": "Answer",
             "label": "Lost to follow-up",
-            "value": "3"
+            "value": "3",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "7761296c-ac63-486b-bd81-ea469eeb9c3d"
+              }
+            ]
           },
           {
             "id": "0f8b9bdc-2521-4685-afe5-0d0754eae115",
             "type": "Answer",
             "label": "Work-up refused",
-            "value": "4"
+            "value": "4",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "7761296c-ac63-486b-bd81-ea469eeb9c3d"
+              }
+            ]
           },
           {
             "id": "45bb5f70-9b69-4fe9-b85d-ed8d45dd185c",
             "type": "Answer",
             "label": "Irreconcilable",
-            "value": "9"
+            "value": "9",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "7761296c-ac63-486b-bd81-ea469eeb9c3d"
+              }
+            ]
           }
         ]
       },
       {
         "id": "8d62767e-6755-4596-a4d5-e3872b9c606b",
+        "itemNo": "",
         "fieldName": "Final Diagnosis",
         "fieldFullName": "Final Diagnosis",
         "genericName": null,
@@ -1961,36 +2505,147 @@
             "id": "f2b39788-5dd5-45e5-a165-9bea33e64310",
             "type": "Answer",
             "label": "Carcinoma In Situ, Other*",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "eddfe977-9793-4cd9-b119-95a730f550fc"
+              },
+              {
+                "isRequired": true,
+                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+              },
+              {
+                "isRequired": true,
+                "question": "18f72f68-48ca-4ee2-a87c-909feaefac75"
+              },
+              {
+                "isRequired": true,
+                "question": "696857ab-a998-499d-a7a5-a82844e1359a"
+              },
+              {
+                "isRequired": true,
+                "question": "dc039f65-14b9-4048-b284-60a73e131540"
+              },
+              {
+                "isRequired": true,
+                "question": "4e5a8675-9661-418b-9dac-f8600a2c0748"
+              }
+            ]
           },
           {
             "id": "e054d004-6fa8-49f0-86ed-68833c3c9ef4",
             "type": "Answer",
             "label": "Invasive Breast Cancer",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "eddfe977-9793-4cd9-b119-95a730f550fc"
+              },
+              {
+                "isRequired": true,
+                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+              },
+              {
+                "isRequired": true,
+                "question": "18f72f68-48ca-4ee2-a87c-909feaefac75"
+              },
+              {
+                "isRequired": true,
+                "question": "696857ab-a998-499d-a7a5-a82844e1359a"
+              },
+              {
+                "isRequired": true,
+                "question": "dc039f65-14b9-4048-b284-60a73e131540"
+              },
+              {
+                "isRequired": true,
+                "question": "4e5a8675-9661-418b-9dac-f8600a2c0748"
+              }
+            ]
           },
           {
             "id": "a7adc08a-9358-4142-9337-3e0300ddf202",
             "type": "Answer",
             "label": "Breast Cancer Not Diagnosed",
-            "value": "3"
+            "value": "3",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "eddfe977-9793-4cd9-b119-95a730f550fc"
+              },
+              {
+                "isRequired": false,
+                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+              },
+              {
+                "isRequired": false,
+                "question": "18f72f68-48ca-4ee2-a87c-909feaefac75"
+              }
+            ]
           },
           {
             "id": "285abe0b-9193-4f1e-87b2-1173b3e18b45",
             "type": "Answer",
             "label": "Lobular Carcinoma In Situ (LCIS) - (Stage 0)",
-            "value": "4"
+            "value": "4",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "18f72f68-48ca-4ee2-a87c-909feaefac75"
+              },
+              {
+                "isRequired": true,
+                "question": "696857ab-a998-499d-a7a5-a82844e1359a"
+              },
+              {
+                "isRequired": true,
+                "question": "dc039f65-14b9-4048-b284-60a73e131540"
+              },
+              {
+                "isRequired": true,
+                "question": "4e5a8675-9661-418b-9dac-f8600a2c0748"
+              }
+            ]
           },
           {
             "id": "ac87ac15-33d6-4b9c-a11a-2e3243cd46a6",
             "type": "Answer",
             "label": "Ductal Carcinoma In Situ (DCIS ) - (Stage 0)",
-            "value": "5"
+            "value": "5",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "eddfe977-9793-4cd9-b119-95a730f550fc"
+              },
+              {
+                "isRequired": true,
+                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+              },
+              {
+                "isRequired": true,
+                "question": "18f72f68-48ca-4ee2-a87c-909feaefac75"
+              },
+              {
+                "isRequired": true,
+                "question": "696857ab-a998-499d-a7a5-a82844e1359a"
+              },
+              {
+                "isRequired": true,
+                "question": "dc039f65-14b9-4048-b284-60a73e131540"
+              },
+              {
+                "isRequired": true,
+                "question": "4e5a8675-9661-418b-9dac-f8600a2c0748"
+              }
+            ]
           }
         ]
       },
       {
         "id": "7761296c-ac63-486b-bd81-ea469eeb9c3d",
+        "itemNo": "",
         "fieldName": "Date of Final Diagnosis / Imaging",
         "fieldFullName": "Date of Final Diagnosis / Imaging",
         "genericName": null,
@@ -2002,7 +2657,7 @@
         "isMultiSelect": false,
         "isRequired": false,
         "beginningPosition": 191,
-        "leadingZeros": "no",
+        "leadingZeros": "yes",
         "justification": "Right"
       }
     ]
@@ -2013,11 +2668,12 @@
     "slug": "breastCancerTreatmentInformation",
     "genericName": "Breast Cancer Treatment Information",
     "isRequired": true,
-    "order": 8,
+    "order": 9,
     "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
     "mdeFields": [
       {
         "id": "eddfe977-9793-4cd9-b119-95a730f550fc",
+        "itemNo": "",
         "fieldName": "Status of Treatment",
         "fieldFullName": "Status of Treatment",
         "genericName": null,
@@ -2029,42 +2685,73 @@
         "isRequired": false,
         "beginningPosition": 199,
         "leadingZeros": "no",
-        "justification": "Right",
+        "justification": "left",
         "mdeFieldsOptions": [
           {
             "id": "80f80b0d-7454-484c-9652-0c0a058218b6",
             "type": "Answer",
             "label": "Treatment started",
-            "value": "1"
+            "value": "1",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+              }
+            ]
           },
           {
             "id": "0d645c54-c19c-4de2-9152-10295c6ac5b3",
             "type": "Answer",
             "label": "Treatment pending",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": false,
+                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+              }
+            ]
           },
           {
             "id": "79444959-66b1-4452-9ab6-37f6684c3af9",
             "type": "Answer",
             "label": "Lost to follow-up",
-            "value": "3"
+            "value": "3",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+              }
+            ]
           },
           {
             "id": "169ecc28-ac5d-41d4-8b6d-72f268aa4534",
             "type": "Answer",
             "label": "Treatment refused",
-            "value": "4"
+            "value": "4",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+              }
+            ]
           },
           {
             "id": "292b1217-d3f3-4a16-86a7-cf0569b98eaf",
             "type": "Answer",
             "label": "Treatment not needed",
-            "value": "9"
+            "value": "9",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+              }
+            ]
           }
         ]
       },
       {
         "id": "494301c9-4f26-46ea-a322-3c8883198ac9",
+        "itemNo": "",
         "fieldName": "Date of Treatment Status",
         "fieldFullName": "Date of Treatment Status",
         "genericName": null,
@@ -2076,22 +2763,23 @@
         "isMultiSelect": false,
         "isRequired": false,
         "beginningPosition": 200,
-        "leadingZeros": "no",
-        "justification": "Right"
+        "leadingZeros": "yes",
+        "justification": "left"
       }
     ]
   },
   {
     "id": "2351192a-640b-4d37-810b-1d4c58624a53",
-    "sectionName": "Cervical and Breast Cancer Registry Data Sections",
-    "slug": "cervicalandBreastCancerRegistryDataSections",
-    "genericName": "Cervical and Breast Cancer Registry Data Sections",
+    "sectionName": "Cervical Cancer Registry Data",
+    "slug": "cervicalCancerRegistryData",
+    "genericName": "Cervical Cancer Registry Data",
     "isRequired": true,
-    "order": 8,
+    "order": 10,
     "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
     "mdeFields": [
       {
         "id": "3199383a-480c-43c3-b087-4abd3227fff2",
+        "itemNo": "",
         "fieldName": "Registry Linkage Status",
         "fieldFullName": "Registry Linkage Status",
         "genericName": null,
@@ -2115,7 +2803,21 @@
             "id": "9ee1c737-9eeb-48b5-a614-f7fe4a148beb",
             "type": "Answer",
             "label": "Linkage process complete, record matched",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "0f739309-4a64-4630-915f-c5635f16c29a"
+              },
+              {
+                "isRequired": true,
+                "question": "ecb27718-fc6a-4352-b1ac-7312d842c732"
+              },
+              {
+                "isRequired": true,
+                "question": "455cdbae-254a-4e45-9a14-f43d55670761"
+              }
+            ]
           },
           {
             "id": "ddcae279-2dc2-4f94-96fe-494715e10fb6",
@@ -2127,6 +2829,7 @@
       },
       {
         "id": "0f739309-4a64-4630-915f-c5635f16c29a",
+        "itemNo": "",
         "fieldName": "Registry Date of Diagnosis",
         "fieldFullName": "Registry Date of Diagnosis",
         "genericName": null,
@@ -2143,6 +2846,7 @@
       },
       {
         "id": "ecb27718-fc6a-4352-b1ac-7312d842c732",
+        "itemNo": "",
         "fieldName": "Registry Summary Stage",
         "fieldFullName": "Registry Summary Stage",
         "genericName": null,
@@ -2214,6 +2918,7 @@
       },
       {
         "id": "455cdbae-254a-4e45-9a14-f43d55670761",
+        "itemNo": "",
         "fieldName": "Registry Collaborative Stage (CS) - Derived AJCC Stage Group",
         "fieldFullName": "Registry Collaborative Stage (CS) - Derived AJCC Stage Group",
         "genericName": null,
@@ -2224,9 +2929,9 @@
         "isMultiSelect": false,
         "isRequired": false,
         "beginningPosition": 218,
+        "leadingZeros": "yes",
         "validMinRange": "00",
         "validMaxRange": "99",
-        "leadingZeros": "no",
         "justification": "Right"
       }
     ]
@@ -2237,15 +2942,16 @@
     "slug": "breastCancerRegistryData",
     "genericName": "Breast Cancer Registry Data",
     "isRequired": true,
-    "order": 8,
+    "order": 11,
     "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
     "mdeFields": [
       {
         "id": "18f72f68-48ca-4ee2-a87c-909feaefac75",
+        "itemNo": "",
         "fieldName": "Registry Linkage Status",
         "fieldFullName": "Registry Linkage Status",
         "genericName": null,
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "hasSubQuestion": false,
@@ -2265,7 +2971,21 @@
             "id": "aa29f39b-5c47-418d-91e6-b0953f96ad8a",
             "type": "Answer",
             "label": "Linked, matched",
-            "value": "2"
+            "value": "2",
+            "mdeDependentQuestions": [
+              {
+                "isRequired": true,
+                "question": "696857ab-a998-499d-a7a5-a82844e1359a"
+              },
+              {
+                "isRequired": true,
+                "question": "dc039f65-14b9-4048-b284-60a73e131540"
+              },
+              {
+                "isRequired": true,
+                "question": "4e5a8675-9661-418b-9dac-f8600a2c0748"
+              }
+            ]
           },
           {
             "id": "778ad76a-bf2a-4027-86f4-2b4fb7cdec8d",
@@ -2277,6 +2997,7 @@
       },
       {
         "id": "696857ab-a998-499d-a7a5-a82844e1359a",
+        "itemNo": "",
         "fieldName": "Registry Date of Diagnosis",
         "fieldFullName": "Registry Date of Diagnosis",
         "genericName": null,
@@ -2288,15 +3009,16 @@
         "isMultiSelect": false,
         "isRequired": false,
         "beginningPosition": 221,
-        "leadingZeros": "no",
+        "leadingZeros": "yes",
         "justification": "Right"
       },
       {
         "id": "dc039f65-14b9-4048-b284-60a73e131540",
+        "itemNo": "",
         "fieldName": "Registry Summary Stage",
         "fieldFullName": "Registry Summary Stage",
         "genericName": null,
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "hasSubQuestion": false,
@@ -2364,6 +3086,7 @@
       },
       {
         "id": "4e5a8675-9661-418b-9dac-f8600a2c0748",
+        "itemNo": "",
         "fieldName": "Registry Collaborative Stage (CS) -Derived AJCC Stage Group",
         "fieldFullName": "Registry Collaborative Stage (CS) -Derived AJCC Stage Group",
         "genericName": null,
