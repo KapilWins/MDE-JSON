@@ -1265,7 +1265,7 @@
     "mdeFields": [
       {
         "id": "8cee7a5a-13f6-4678-94d9-9cc98f5f6eab",
-        "itemNo": "",
+        "itemNo": "5.01",
         "fieldName": "Indication for Initial Mammogram",
         "fieldFullName": "Indication for Initial Mammogram",
         "type": "number",
@@ -1276,7 +1276,7 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "7da2bf79-4442-4873-b825-092ec9e26c55",
@@ -1403,10 +1403,10 @@
       },
       {
         "id": "f7847123-1cf3-416e-a747-aa2fa5b9a773",
-        "itemNo": "",
+        "itemNo": "5.02",
         "fieldName": "Breast Service Paid by NBCCEDP Funds",
         "fieldFullName": "Breast Service Paid by NBCCEDP Funds",
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "beginningPosition": 109,
@@ -1414,7 +1414,7 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "af0f4b4a-307b-4ca3-aab3-723867bc36d4",
@@ -1438,7 +1438,7 @@
       },
       {
         "id": "154bb9b3-48b3-4936-a68e-a21943c48068",
-        "itemNo": "",
+        "itemNo": "5.03",
         "fieldName": "Breast Diagnostic Referral Date",
         "fieldFullName": "Breast Diagnostic Referral Date",
         "type": "string",
@@ -1446,26 +1446,26 @@
         "itemLength": 8,
         "fieldLength": 8,
         "beginningPosition": 110,
-        "leadingZeros": "no",
+        "leadingZeros": "yes",
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right"
+        "justification": "Left"
       },
       {
         "id": "c99c1f22-8657-4209-8bf1-74141ed992a0",
-        "itemNo": "",
+        "itemNo": "5.04",
         "fieldName": "High Risk for Breast Cancer",
         "fieldFullName": "High Risk for Breast Cancer",
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "beginningPosition": 118,
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "leadingZeros": "yes",
-        "justification": "Right",
+        "leadingZeros": "no",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "99bcbb3a-68e5-491e-be2e-3e30942254ec",
@@ -1501,17 +1501,17 @@
       },
       {
         "id": "e4961149-b147-4e57-8865-a863ee65293a",
-        "itemNo": "",
+        "itemNo": "5.05",
         "fieldName": "Screening MRI results",
         "fieldFullName": "Screening MRI results",
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "beginningPosition": 119,
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "leadingZeros": "yes",
+        "leadingZeros": "no",
         "justification": "Right",
         "mdeFieldsOptions": [
           {
@@ -1635,7 +1635,7 @@
       },
       {
         "id": "7e9ce003-4c9e-4eb7-bbf2-2c8fb712ff4f",
-        "itemNo": "",
+        "itemNo": "5.06",
         "fieldName": "Date of Screening MRI",
         "fieldFullName": "Date of Screening MRI",
         "type": "string",
@@ -1647,12 +1647,11 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right",
-        "mdeFieldsOptions": []
+        "justification": "Left"
       },
       {
         "id": "ac0b3fc6-dd43-439d-a07d-2442e9af323e",
-        "itemNo": "",
+        "itemNo": "5.07",
         "fieldName": "Initial Mammography Test Result",
         "fieldFullName": "Initial Mammography Test Result",
         "type": "number",
@@ -1809,7 +1808,7 @@
       },
       {
         "id": "aa993051-9ccc-4e7f-92b6-828c9c44a59e",
-        "itemNo": "",
+        "itemNo": "5.08",
         "fieldName": "Date of Initial Mammogram",
         "fieldFullName": "Date of Initial Mammogram",
         "type": "string",
@@ -1821,12 +1820,11 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "Right",
-        "mdeFieldsOptions": []
+        "justification": "Left"
       },
       {
         "id": "8013f148-4eb1-49bb-b3df-f2fa6ac0193c",
-        "itemNo": "",
+        "itemNo": "5.09",
         "fieldName": "Clinical Breast Exam",
         "fieldFullName": "Clinical Breast Exam",
         "type": "string",
@@ -1836,10 +1834,8 @@
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "leadingZeros": "yes",
-        "validMinRange": "008",
-        "validMaxRange": "154",
-        "justification": "Right",
+        "leadingZeros": "no",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "09c47140-ac14-49ba-b68f-f2f03de98df3",
@@ -1886,7 +1882,7 @@
       },
       {
         "id": "62ea0afe-8e72-44eb-a9d7-5f46157d03a9",
-        "itemNo": "",
+        "itemNo": "5.10",
         "fieldName": "Date of Clinical Breast Exam (CBE)",
         "fieldFullName": "Date of Clinical Breast Exam (CBE)",
         "type": "string",
@@ -1898,15 +1894,14 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "yes",
-        "justification": "Right",
-        "mdeFieldsOptions": []
+        "justification": "Left"
       },
       {
         "id": "91a3d656-a01c-4532-863f-c5a9d332d37f",
-        "itemNo": "",
+        "itemNo": "5.11",
         "fieldName": "Additional Procedures Needed to Complete Breast Cycle",
         "fieldFullName": "Additional Procedures Needed to Complete Breast Cycle",
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "beginningPosition": 147,
@@ -1914,7 +1909,7 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "no",
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "dabfd6df-e70d-4b50-ad25-5e6a6fdbd389",
@@ -1948,20 +1943,18 @@
       },
       {
         "id": "c5c3f141-c52e-4d44-a680-3519f4f5183c",
-        "itemNo": "",
+        "itemNo": "5.12",
         "fieldName": "MDE Version Number",
         "fieldFullName": "MDE Version Number",
-        "type": "string",
+        "type": "number",
         "itemLength": 2,
         "fieldLength": 2,
         "beginningPosition": 148,
         "hasSubQuestion": false,
         "isMultiSelect": false,
-        "isRequired": false,
-        "leadingZeros": "yes",
-        "validMinRange": "051",
-        "validMaxRange": "274",
-        "justification": "Right",
+        "isRequired": true,
+        "leadingZeros": "no",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "ecac0503-dda9-4fde-bc62-4b46106b1f8b",
@@ -1990,18 +1983,18 @@
     "mdeFields": [
       {
         "id": "8e87ec3c-e7d6-4362-afbb-2d371db4d2ed",
-        "itemNo": "",
+        "itemNo": "6.01",
         "fieldName": "Status of Final Diagnosis",
         "fieldFullName": "Status of Final Diagnosis",
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "beginningPosition": 150,
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "leadingZeros": "yes",
-        "justification": "left",
+        "leadingZeros": "no",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "a3093fa1-43ef-4e37-8a69-08383e7ddea2",
@@ -2075,10 +2068,10 @@
       },
       {
         "id": "5e5fb34d-edfe-4ddb-aea4-5d8752638b81",
-        "itemNo": "",
+        "itemNo": "6.02",
         "fieldName": "Final Diagnosis",
         "fieldFullName": "Final Diagnosis",
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "beginningPosition": 151,
@@ -2086,7 +2079,7 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "yes",
-        "justification": "left",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "4e50cbde-37fe-4350-9cef-857b986441c6",
@@ -2256,7 +2249,7 @@
       },
       {
         "id": "78bd41e3-27d7-47a4-bc74-1f5a744025c0",
-        "itemNo": "",
+        "itemNo": "6.03",
         "fieldName": "Final Diagnosis - Other",
         "fieldFullName": "Final Diagnosis - Other",
         "type": "string",
@@ -2267,11 +2260,11 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "yes",
-        "justification": "left"
+        "justification": "Left"
       },
       {
         "id": "336644a1-ccbc-4139-b7cc-504b11414038",
-        "itemNo": "",
+        "itemNo": "6.04",
         "fieldName": "Date of Final Diagnosis",
         "fieldFullName": "Date of Final Diagnosis",
         "type": "string",
@@ -2283,7 +2276,7 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "yes",
-        "justification": "left"
+        "justification": "Left"
       }
     ]
   },
@@ -2298,17 +2291,17 @@
     "mdeFields": [
       {
         "id": "3023dcea-ab38-4528-bdfb-dffc35b0104f",
-        "itemNo": "",
+        "itemNo": "7.01",
         "fieldName": "Status of Treatment",
         "fieldFullName": "Status of Treatment",
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "beginningPosition": 180,
         "hasSubQuestion": false,
         "isMultiSelect": false,
         "isRequired": false,
-        "justification": "left",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "bb49b6b0-a5b9-4475-8ab1-54800053d948",
@@ -2374,7 +2367,7 @@
       },
       {
         "id": "3fe2f2ed-5ba0-4c2e-8ce2-abd248a54ac7",
-        "itemNo": "",
+        "itemNo": "7.02",
         "fieldName": "Date of Treatment Status",
         "fieldFullName": "Date of Treatment Status",
         "type": "string",
@@ -2386,7 +2379,7 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "yes",
-        "justification": "left"
+        "justification": "Left"
       }
     ]
   },
@@ -2401,11 +2394,11 @@
     "mdeFields": [
       {
         "id": "8ca150cd-0395-47a8-aa1a-d416ef1a8cac",
-        "itemNo": "",
+        "itemNo": "8.01",
         "fieldName": "Status of Final Diagnosis / Imaging",
         "fieldFullName": "Status of Final Diagnosis / Imaging",
         "genericName": null,
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "hasSubQuestion": false,
@@ -2413,7 +2406,7 @@
         "isRequired": false,
         "beginningPosition": 189,
         "leadingZeros": "no",
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "a72445d0-beff-45b8-867c-42cccf6245ca",
@@ -2487,11 +2480,11 @@
       },
       {
         "id": "8d62767e-6755-4596-a4d5-e3872b9c606b",
-        "itemNo": "",
+        "itemNo": "8.02",
         "fieldName": "Final Diagnosis",
         "fieldFullName": "Final Diagnosis",
         "genericName": null,
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "hasSubQuestion": false,
@@ -2499,7 +2492,7 @@
         "isRequired": false,
         "beginningPosition": 190,
         "leadingZeros": "no",
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "f2b39788-5dd5-45e5-a165-9bea33e64310",
@@ -2645,7 +2638,7 @@
       },
       {
         "id": "7761296c-ac63-486b-bd81-ea469eeb9c3d",
-        "itemNo": "",
+        "itemNo": "8.03",
         "fieldName": "Date of Final Diagnosis / Imaging",
         "fieldFullName": "Date of Final Diagnosis / Imaging",
         "genericName": null,
@@ -2658,7 +2651,7 @@
         "isRequired": false,
         "beginningPosition": 191,
         "leadingZeros": "yes",
-        "justification": "Right"
+        "justification": "Left"
       }
     ]
   },
@@ -2673,11 +2666,11 @@
     "mdeFields": [
       {
         "id": "eddfe977-9793-4cd9-b119-95a730f550fc",
-        "itemNo": "",
+        "itemNo": "9.01",
         "fieldName": "Status of Treatment",
         "fieldFullName": "Status of Treatment",
         "genericName": null,
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "hasSubQuestion": false,
@@ -2685,7 +2678,7 @@
         "isRequired": false,
         "beginningPosition": 199,
         "leadingZeros": "no",
-        "justification": "left",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "80f80b0d-7454-484c-9652-0c0a058218b6",
@@ -2751,7 +2744,7 @@
       },
       {
         "id": "494301c9-4f26-46ea-a322-3c8883198ac9",
-        "itemNo": "",
+        "itemNo": "9.02",
         "fieldName": "Date of Treatment Status",
         "fieldFullName": "Date of Treatment Status",
         "genericName": null,
@@ -2764,7 +2757,7 @@
         "isRequired": false,
         "beginningPosition": 200,
         "leadingZeros": "yes",
-        "justification": "left"
+        "justification": "Left"
       }
     ]
   },
@@ -2779,11 +2772,11 @@
     "mdeFields": [
       {
         "id": "3199383a-480c-43c3-b087-4abd3227fff2",
-        "itemNo": "",
+        "itemNo": "10.01",
         "fieldName": "Registry Linkage Status",
         "fieldFullName": "Registry Linkage Status",
         "genericName": null,
-        "type": "string",
+        "type": "number",
         "itemLength": 1,
         "fieldLength": 1,
         "hasSubQuestion": false,
@@ -2791,7 +2784,7 @@
         "isRequired": false,
         "beginningPosition": 208,
         "leadingZeros": "no",
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "2a55ec2a-d6c5-41a9-8e52-2df7916d6af9",
@@ -2829,7 +2822,7 @@
       },
       {
         "id": "0f739309-4a64-4630-915f-c5635f16c29a",
-        "itemNo": "",
+        "itemNo": "10.02",
         "fieldName": "Registry Date of Diagnosis",
         "fieldFullName": "Registry Date of Diagnosis",
         "genericName": null,
@@ -2841,12 +2834,12 @@
         "isMultiSelect": false,
         "isRequired": false,
         "beginningPosition": 209,
-        "leadingZeros": "no",
-        "justification": "Right"
+        "leadingZeros": "yes",
+        "justification": "Left"
       },
       {
         "id": "ecb27718-fc6a-4352-b1ac-7312d842c732",
-        "itemNo": "",
+        "itemNo": "10.03",
         "fieldName": "Registry Summary Stage",
         "fieldFullName": "Registry Summary Stage",
         "genericName": null,
@@ -2858,7 +2851,7 @@
         "isRequired": false,
         "beginningPosition": 217,
         "leadingZeros": "no",
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "79288867-059d-4e4c-80a5-f49ef032276b",
@@ -2918,7 +2911,7 @@
       },
       {
         "id": "455cdbae-254a-4e45-9a14-f43d55670761",
-        "itemNo": "",
+        "itemNo": "10.04",
         "fieldName": "Registry Collaborative Stage (CS) - Derived AJCC Stage Group",
         "fieldFullName": "Registry Collaborative Stage (CS) - Derived AJCC Stage Group",
         "genericName": null,
@@ -2947,7 +2940,7 @@
     "mdeFields": [
       {
         "id": "18f72f68-48ca-4ee2-a87c-909feaefac75",
-        "itemNo": "",
+        "itemNo": "11.01",
         "fieldName": "Registry Linkage Status",
         "fieldFullName": "Registry Linkage Status",
         "genericName": null,
@@ -2959,7 +2952,7 @@
         "isRequired": false,
         "beginningPosition": 220,
         "leadingZeros": "no",
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "ad86b252-3bd5-4dbb-b22f-98de31ef3814",
@@ -2997,7 +2990,7 @@
       },
       {
         "id": "696857ab-a998-499d-a7a5-a82844e1359a",
-        "itemNo": "",
+        "itemNo": "11.02",
         "fieldName": "Registry Date of Diagnosis",
         "fieldFullName": "Registry Date of Diagnosis",
         "genericName": null,
@@ -3010,15 +3003,15 @@
         "isRequired": false,
         "beginningPosition": 221,
         "leadingZeros": "yes",
-        "justification": "Right"
+        "justification": "Left"
       },
       {
         "id": "dc039f65-14b9-4048-b284-60a73e131540",
-        "itemNo": "",
+        "itemNo": "11.03",
         "fieldName": "Registry Summary Stage",
         "fieldFullName": "Registry Summary Stage",
         "genericName": null,
-        "type": "number",
+        "type": "string",
         "itemLength": 1,
         "fieldLength": 1,
         "hasSubQuestion": false,
@@ -3026,7 +3019,7 @@
         "isRequired": false,
         "beginningPosition": 229,
         "leadingZeros": "no",
-        "justification": "Right",
+        "justification": "Left",
         "mdeFieldsOptions": [
           {
             "id": "bd0a04c0-3d95-4a05-b62f-8811aa2296b6",
@@ -3086,7 +3079,7 @@
       },
       {
         "id": "4e5a8675-9661-418b-9dac-f8600a2c0748",
-        "itemNo": "",
+        "itemNo": "11.04",
         "fieldName": "Registry Collaborative Stage (CS) -Derived AJCC Stage Group",
         "fieldFullName": "Registry Collaborative Stage (CS) -Derived AJCC Stage Group",
         "genericName": null,
