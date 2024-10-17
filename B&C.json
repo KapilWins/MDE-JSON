@@ -81,15 +81,15 @@
         "isRequired": false,
         "leadingZeros": "no",
         "justification": "Right",
-        "mdeDependentQuestions": [
+        "mdeDependentFields": [
           {
             "isRequired": false,
-            "question": "dc282006-1a92-4a62-9fb4-22262294caa1"
+            "mdeField": "dc282006-1a92-4a62-9fb4-22262294caa1"
           }
         ]
       },
       {
-        "id": "36014fc2-4871-461e-8a38-e04af746317a",
+        "id": "4b019cb7-2fbb-4f1c-b576-6e72d684b83c",
         "itemNo": "2.02",
         "fieldName": "State or Territory of Residence",
         "fieldFullName": "State or Territory of Residence",
@@ -118,10 +118,10 @@
         "isRequired": false,
         "leadingZeros": "no",
         "justification": "Right",
-        "mdeDependentQuestions": [
+        "mdeDependentFields": [
           {
             "isRequired": false,
-            "question": "36014fc2-4871-461e-8a38-e04af746317a"
+            "mdeField": "36014fc2-4871-461e-8a38-e04af746317a"
           }
         ]
       },
@@ -133,7 +133,7 @@
         "type": "string",
         "itemLength": 6,
         "fieldLength": 6,
-        "otherFormat": "MMYYYY",
+        "otherFormat": "MMCCYY",
         "beginningPosition": 36,
         "hasSubQuestion": false,
         "isMultiSelect": false,
@@ -486,9 +486,7 @@
             "name": null,
             "value": "1",
             "validMinRange": null,
-            "validMaxRange": null,
-            "children": [],
-            "mdeDependentQuestions": []
+            "validMaxRange": null
           },
           {
             "id": "8a65b307-79ac-4d19-9ebd-1e31b4892fb9",
@@ -497,9 +495,7 @@
             "name": null,
             "value": "2",
             "validMinRange": null,
-            "validMaxRange": null,
-            "children": [],
-            "mdeDependentQuestions": []
+            "validMaxRange": null
           },
           {
             "id": "712a12a9-a54a-4fcf-b8bc-b151718d1447",
@@ -508,9 +504,7 @@
             "name": null,
             "value": "3",
             "validMinRange": null,
-            "validMaxRange": null,
-            "children": [],
-            "mdeDependentQuestions": []
+            "validMaxRange": null
           }
         ]
       }
@@ -575,7 +569,7 @@
         "fieldName": "Date of Previous Pap Test",
         "fieldFullName": "Date of Previous Pap Test",
         "type": "string",
-        "otherFormat": "MMYYYY",
+        "otherFormat": "MMCCYY",
         "itemLength": 6,
         "fieldLength": 6,
         "beginningPosition": 50,
@@ -811,7 +805,7 @@
         "fieldName": "Cervical Diagnostic Referral Date",
         "fieldFullName": "Cervical Diagnostic Referral Date",
         "type": "string",
-        "otherFormat": "MMDDYYYY",
+        "otherFormat": "MMDDCCYY",
         "itemLength": 8,
         "fieldLength": 8,
         "beginningPosition": 59,
@@ -840,7 +834,7 @@
             "id": "7e43467c-1113-4ddb-b9af-e20085c4c390",
             "type": "Answer",
             "label": "Negative for intraepithelial lesion or malignancy",
-            "value": "1",
+            "value": "01",
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
@@ -852,7 +846,7 @@
             "id": "bf114fe4-78b8-459d-85dd-187f18babebd",
             "type": "Answer",
             "label": "Infection/Inflammation/Reactive Changes (Bethesda 1991)",
-            "value": "2",
+            "value": "02",
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
@@ -864,7 +858,7 @@
             "id": "95740696-723c-4819-8695-f47f218c2873",
             "type": "Answer",
             "label": "Atypical squamous cells of undetermined significance (ASC-US)",
-            "value": "3",
+            "value": "03",
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
@@ -876,7 +870,7 @@
             "id": "d2dcdb10-450c-44d4-88d3-374e07734013",
             "type": "Answer",
             "label": "Low Grade SIL (including HPV changes)",
-            "value": "4",
+            "value": "04",
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
@@ -888,7 +882,7 @@
             "id": "fbda175f-dc87-4482-8b53-c36801cd9d25",
             "type": "Answer",
             "label": "Atypical squamous cells cannot exclude HSIL (ASC-H Bethesda 2001)",
-            "value": "5",
+            "value": "05",
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
@@ -905,7 +899,7 @@
             "id": "ba824c4c-e9b8-445c-bfe1-1afc82eed298",
             "type": "Answer",
             "label": "High Grade SIL",
-            "value": "6",
+            "value": "06",
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
@@ -922,7 +916,7 @@
             "id": "7e0dc2ae-ab19-4518-80b3-877236d12c34",
             "type": "Answer",
             "label": "Squamous Cell Carcinoma",
-            "value": "7",
+            "value": "07",
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
@@ -939,7 +933,7 @@
             "id": "8d287a30-6c1f-4195-9b63-6d807a8c139d",
             "type": "Answer",
             "label": "Atypical Glandular Cells (Bethesda 2014)",
-            "value": "8",
+            "value": "08",
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
@@ -956,7 +950,7 @@
             "id": "307ba5a4-09c9-4a4a-96d9-4ff02ceb228a",
             "type": "Answer",
             "label": "Adenocarcinoma in situ (AIS) (Bethesda 2014)",
-            "value": "9",
+            "value": "09",
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
@@ -1067,7 +1061,7 @@
         "fieldFullName": "Date of Pap Test",
         "type": "number",
         "itemLength": 8,
-        "otherFormat": "MMDDYYYY",
+        "otherFormat": "MMDDCCYY",
         "fieldLength": 8,
         "beginningPosition": 89,
         "hasSubQuestion": false,
@@ -1209,7 +1203,7 @@
         "fieldName": "Date of HPV Test",
         "fieldFullName": "Date of HPV Test",
         "type": "string",
-        "otherFormat": "MMDDYYYY",
+        "otherFormat": "MMDDCCYY",
         "itemLength": 8,
         "fieldLength": 8,
         "beginningPosition": 99,
@@ -1455,7 +1449,7 @@
         "fieldName": "Breast Diagnostic Referral Date",
         "fieldFullName": "Breast Diagnostic Referral Date",
         "type": "string",
-        "otherFormat": "MMDDYYYY",
+        "otherFormat": "MMDDCCYY",
         "itemLength": 8,
         "fieldLength": 8,
         "beginningPosition": 110,
@@ -1652,7 +1646,7 @@
         "fieldName": "Date of Screening MRI",
         "fieldFullName": "Date of Screening MRI",
         "type": "string",
-        "otherFormat": "MMDDYYYY",
+        "otherFormat": "MMDDCCYY",
         "itemLength": 8,
         "fieldLength": 8,
         "beginningPosition": 120,
@@ -1825,7 +1819,7 @@
         "fieldName": "Date of Initial Mammogram",
         "fieldFullName": "Date of Initial Mammogram",
         "type": "string",
-        "otherFormat": "MMDDYYYY",
+        "otherFormat": "MMDDCCYY",
         "itemLength": 8,
         "fieldLength": 8,
         "beginningPosition": 130,
@@ -1899,7 +1893,7 @@
         "fieldName": "Date of Clinical Breast Exam (CBE)",
         "fieldFullName": "Date of Clinical Breast Exam (CBE)",
         "type": "string",
-        "otherFormat": "MMDDYYYY",
+        "otherFormat": "MMDDCCYY",
         "itemLength": 8,
         "fieldLength": 8,
         "beginningPosition": 139,
@@ -2511,7 +2505,7 @@
               },
               {
                 "isRequired": true,
-                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+                "question": "7bd07e98-3b34-470f-af40-595c62199abb"
               },
               {
                 "isRequired": true,
@@ -2543,7 +2537,7 @@
               },
               {
                 "isRequired": true,
-                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+                "question": "7bd07e98-3b34-470f-af40-595c62199abb"
               },
               {
                 "isRequired": true,
@@ -2575,7 +2569,7 @@
               },
               {
                 "isRequired": false,
-                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+                "question": "7bd07e98-3b34-470f-af40-595c62199abb"
               },
               {
                 "isRequired": false,
@@ -2619,7 +2613,7 @@
               },
               {
                 "isRequired": true,
-                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+                "question": "7bd07e98-3b34-470f-af40-595c62199abb"
               },
               {
                 "isRequired": true,
@@ -2693,7 +2687,7 @@
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
-                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+                "question": "7bd07e98-3b34-470f-af40-595c62199abb"
               }
             ]
           },
@@ -2705,7 +2699,7 @@
             "mdeDependentQuestions": [
               {
                 "isRequired": false,
-                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+                "question": "7bd07e98-3b34-470f-af40-595c62199abb"
               }
             ]
           },
@@ -2717,7 +2711,7 @@
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
-                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+                "question": "7bd07e98-3b34-470f-af40-595c62199abb"
               }
             ]
           },
@@ -2729,7 +2723,7 @@
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
-                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+                "question": "7bd07e98-3b34-470f-af40-595c62199abb"
               }
             ]
           },
@@ -2741,7 +2735,7 @@
             "mdeDependentQuestions": [
               {
                 "isRequired": true,
-                "question": "494301c9-4f26-46ea-a322-3c8883198ac9"
+                "question": "7bd07e98-3b34-470f-af40-595c62199abb"
               }
             ]
           }
