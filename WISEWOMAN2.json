@@ -3719,7 +3719,7 @@
                 "id": "392bc187-c4fe-4761-84fd-40df1ef6189d",
                 "fieldName": "Monitored",
                 "showDuplicateFields": false,
-                "showPreviousValues": false,
+                "showPreviousValues": true,
                 "setValue": false,
                 "isSearchable": false,
                 "isFutureDateSelectable": true,
