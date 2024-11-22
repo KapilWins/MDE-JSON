@@ -46,7 +46,7 @@
         "fieldName": "Record Identifier",
         "fieldFullName": "Record Identifier",
         "genericName": "Record Identifier",
-        "type": "number",
+        "type": "string",
         "itemLength": 8,
         "fieldLength": 8,
         "hasSubQuestion": false,
