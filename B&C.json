@@ -6,7 +6,7 @@
     "genericName": "Program, Patient, and Record Location",
     "isRequired": true,
     "order": 1,
-    "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
+    "program": "d58a55fd-9a91-44c1-8d7a-c97ebe015973",
     "mdeFields": [
       {
         "id": "8dbdad0f-0084-4859-8341-ad735a8adb5c",
@@ -64,7 +64,7 @@
     "genericName": "Patient Demographic Information",
     "isRequired": true,
     "order": 2,
-    "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
+    "program": "d58a55fd-9a91-44c1-8d7a-c97ebe015973",
     "mdeFields": [
       {
         "id": "36014fc2-4871-461e-8a38-e04af746317a",
@@ -80,18 +80,12 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "no",
-        "justification": "Right",
-        "mdeDependentFields": [
-          {
-            "isRequired": false,
-            "mdeField": "dc282006-1a92-4a62-9fb4-22262294caa1"
-          }
-        ]
+        "justification": "Right"
       },
       {
         "id": "4b019cb7-2fbb-4f1c-b576-6e72d684b83c",
         "itemNo": "2.02",
-        "fieldName": "State or Territory of Residence",
+        "fieldName": "stateOrTerritoryOfResidence",
         "fieldFullName": "State or Territory of Residence",
         "genericName": "State or Territory of Residence",
         "type": "string",
@@ -117,13 +111,7 @@
         "isMultiSelect": false,
         "isRequired": false,
         "leadingZeros": "no",
-        "justification": "Right",
-        "mdeDependentFields": [
-          {
-            "isRequired": false,
-            "mdeField": "36014fc2-4871-461e-8a38-e04af746317a"
-          }
-        ]
+        "justification": "Right"
       },
       {
         "id": "101d78b7-4b28-4f32-ba14-44fb83b19691",
@@ -462,7 +450,7 @@
     "genericName": "Patient Navigation",
     "isRequired": true,
     "order": 3,
-    "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
+    "program": "d58a55fd-9a91-44c1-8d7a-c97ebe015973",
     "mdeFields": [
       {
         "id": "13f2edf3-3e42-4981-89c8-7fc989975088",
@@ -478,6 +466,7 @@
         "leadingZeros": "no",
         "hasSubQuestion": false,
         "isMultiSelect": false,
+        "isRequired": true,
         "mdeFieldsOptions": [
           {
             "id": "4788067c-d192-4475-8d99-a980dba57bc9",
@@ -517,7 +506,7 @@
     "genericName": "Cervical Screening Information",
     "isRequired": true,
     "order": 4,
-    "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
+    "program": "d58a55fd-9a91-44c1-8d7a-c97ebe015973",
     "mdeFields": [
       {
         "id": "9d6fc064-972f-4be5-a0e7-a132b6f65bc6",
@@ -1268,7 +1257,7 @@
     "genericName": "Breast Screening Information",
     "isRequired": true,
     "order": 5,
-    "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
+    "program": "d58a55fd-9a91-44c1-8d7a-c97ebe015973",
     "mdeFields": [
       {
         "id": "694ea844-40d0-4fd7-8860-f2c1ba24bca5",
@@ -1986,7 +1975,7 @@
     "genericName": "Cervical Final Diagnosis Information",
     "isRequired": true,
     "order": 6,
-    "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
+    "program": "d58a55fd-9a91-44c1-8d7a-c97ebe015973",
     "mdeFields": [
       {
         "id": "0010b5d2-5500-4e18-81c4-d56c2a73b94e",
@@ -2290,7 +2279,7 @@
     "genericName": "Cervical Cancer Treatment Information",
     "isRequired": true,
     "order": 7,
-    "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
+    "program": "d58a55fd-9a91-44c1-8d7a-c97ebe015973",
     "mdeFields": [
       {
         "id": "dbe481d3-0d97-4a94-a4fe-643bc0e71b7f",
@@ -2393,7 +2382,7 @@
     "genericName": "Breast Final Diagnosis Information",
     "isRequired": true,
     "order": 8,
-    "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
+    "program": "d58a55fd-9a91-44c1-8d7a-c97ebe015973",
     "mdeFields": [
       {
         "id": "13bf5355-e514-48e9-b470-94b17f51b7ca",
@@ -2661,7 +2650,7 @@
     "genericName": "Breast Cancer Treatment Information",
     "isRequired": true,
     "order": 9,
-    "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
+    "program": "d58a55fd-9a91-44c1-8d7a-c97ebe015973",
     "mdeFields": [
       {
         "id": "a74f058d-f32c-42a1-8c6b-87a024ef74c0",
@@ -2767,7 +2756,7 @@
     "genericName": "Cervical Cancer Registry Data",
     "isRequired": true,
     "order": 10,
-    "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
+    "program": "d58a55fd-9a91-44c1-8d7a-c97ebe015973",
     "mdeFields": [
       {
         "id": "1019c37f-ec86-42d4-aded-ab99a3e4b495",
@@ -2935,7 +2924,7 @@
     "genericName": "Breast Cancer Registry Data",
     "isRequired": true,
     "order": 11,
-    "program": "c6fb7d03-07b8-4f01-92f4-d4752bd680bd",
+    "program": "d58a55fd-9a91-44c1-8d7a-c97ebe015973",
     "mdeFields": [
       {
         "id": "bf64b2b9-4822-4277-89c9-24cc6290d613",
